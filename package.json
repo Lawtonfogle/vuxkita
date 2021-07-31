@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build && npm run git-prep",
+    "lint": "vue-cli-service lint",
+    "git-prep": "bash git-prep.sh"
   },
   "dependencies": {
     "core-js": "^3.6.5",
